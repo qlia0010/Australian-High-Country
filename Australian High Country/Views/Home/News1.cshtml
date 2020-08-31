@@ -1,0 +1,92 @@
+﻿<!-- bradcam_area_start -->
+<div class="bradcam_area breadcam_bg overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 style="font-family: Ubuntu-Bold">News</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+@*<div class="container" style="margin-top:30px; margin-bottom: 20px">
+        <div class="row">
+            <div class="col-4">
+                <a href="/Home/Index"><img alt="" src="~/img/team/1.png" style="width:300px"></a>
+                <h5>asdasdasdasdasdddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadd</h5>
+            </div>
+            <div class="col-4">
+                <a href="/Home/Index"><img alt="" src="~/img/team/1.png" style="width:300px"></a>
+                <h5>asdasdaasdasdasda</h5>
+            </div>
+            <div class="col-4">
+                <a href="/Home/Index"><img alt="" src="~/img/team/1.png" style="width:300px"></a>
+                <h5>asdasdasdasdasdasdasd</h5>
+            </div>
+        </div>
+    </div>
+
+    <style type=text/css>
+        white-space: normal
+    </style>*@
+
+<div class="news" style="margin-top: 30px; margin-bottom: 20px">
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.get('https://www.googleapis.com/customsearch/v1?key=AIzaSyBEDlm24I2CV1-dEJ6PSLpUMlBDNNHrD1g&cx=23e26ed01a75510cd&q=high%20country%20plant', function (res) {
+
+            if (res.items.length > 0) {
+                var s = "";
+                s += "<div class='container'>";
+                s += "<div class='row'>";
+
+                if (res.items.length >= 15) {
+                    for (var i = 0; i < 15; i++) {
+                        s += "<div class='col-4'>"
+                        s += "<a href=" + res.items[i].link + " target = '_blank'>"
+                        s += "<h4 style='width: 101px; white-space: nowrap; overflow: hidden; font-family: Ubuntu-Bold '>" + res.items[i].pagemap.metatags[0]['article:published_time'] + "</h4>"
+                        s += "<img alt='' src=" + res.items[i].pagemap.metatags[0]['og:image'] + " style= 'width:90%;height:70%'>"
+                        s += "</a>"
+                        s += "<br>"
+                        s += "<h5 style='font-family: Ubuntu-Bold'>" + res.items[i].title + "</h5>"
+                        s += "<br>"
+                        s += "<br>"
+                        s += "</div>"
+                    }
+                }
+                else {
+                    for (var i = 0; i < res.items.length; i++) {
+                        s += "<div class='col-4'>"
+                        s += "<a href=" + res.items[i].link + " target = '_blank'>"
+                        s += "<h4 style='width: 101px; white-space: nowrap; overflow: hidden; font-family: Ubuntu-Bold'>" + res.items[i].pagemap.metatags[0]['article:published_time'] + "</h4>"
+                        s += "<img alt='' src=" + res.items[i].pagemap.metatags[0]['og:image'] + " style= 'width:90%;height:70%'>"
+                        s += "</a>"
+                        s += "<br>"
+                        s += "<h5 style='font-family: Ubuntu-Bold'>" + res.items[i].title + "</h5>"
+                        s += "<br>"
+                        s += "<br>"
+                        s += "</div>"
+                    }
+                }
+                s += "</div>";
+                s += "</div>";
+                $('.news').html(s);
+
+            }
+
+        })
+
+
+
+
+    });
+</script>
+<div>
+    <h4 style="font-family: Lato; font-size:30px; color:#ff6a00; margin-left:30%">
+        <a href="~/Home/Explore">CLICK HERE TO GO BACK TO THE EXPLORE PAGE</a>
+    </h4>
+</div>

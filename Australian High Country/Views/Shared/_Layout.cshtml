@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Australian High Country</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/themify-icons.css">
+    <link rel="stylesheet" href="~/css/nice-select.css">
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/gijgo.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/slicknav.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body style="background-color: #E5E7E9">
+    @*<script type="text/javascript">
+        loopy()
+        function loopy() {
+            var sWord = ""
+            while (sWord != "123") {//初始密码123
+                sWord = prompt("Enter password!")
+            }
+            alert("AH…Welcome！")
+        }
+    </script>*@
+    <header>
+        <div class="header-area">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-1 col-lg-1">
+                            <div class="logo-img">
+                                <a href="~/Home/Index">
+                                    <img src="~/img/pb1.png" alt="" style="width:200%; height:100%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-11 col-lg-11">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul>
+                                                <li><a href="~/Home/Index" >Home</a></li>
+                                                <li><a href="~/Home/About" >about Us</a></li>
+                                                @*<li><a href="~/Home/History">History</a></li>*@
+                                                <li>
+                                                    <a href="~/Home/Highcountry">About High country<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="~/Home/Region" style="color:#ffffff">Region</a></li>
+                                                        <li><a href="~/Home/History" style="color:#ffffff">History</a></li>
+                                                        <li><a href="~/Home/Flora" style="color:#ffffff">Flora</a></li>
+                                                        <li><a href="~/Home/Disaster" style="color:#ffffff">Disaster</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="~/Home/VegetationHighcountry">Vegetation<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="~/Home/Land" style="color:#ffffff">Land</a></li>
+                                                        <li><a href="~/Home/Vegetationinland" style="color:#ffffff">Vegetation</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="~/Home/Bushfire">Bushfire<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="~/Home/Prepare" style="color:#ffffff">Prepare</a></li>
+
+                                                        <li><a href="~/Home/Property" style="color:#ffffff">Property</a></li>
+                                                        <li><a href="~/Home/Vegetation" style="color:#ffffff">Vegetation</a></li>
+                                                        <li><a href="~/Home/Livestock" style="color:#ffffff">Livestock</a></li>
+                                                        <li><a href="~/Home/Family" style="color:#ffffff">Family</a></li>
+
+                                                        <li><a href="~/Home/Responding" style="color:#ffffff">Responding</a></li>
+                                                        <li><a href="~/Home/Recovering" style="color:#ffffff">Recovering</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="~/Home/VegetationHighcountry">News<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="~/Home/Land" style="color:#ffffff">Bushfire News</a></li>
+                                                        <li><a href="~/Home/Vegetationinland" style="color:#ffffff">Vegetation News</a></li>
+                                                    </ul>
+                                                </li>                                                       
+                                                <li><a class="boxed-btn3" style="padding:15px 5px 15px 5px;" href="~/Home/Contact">Emergency Contact</a></li>
+                                             </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="container" style="margin-top:0px; margin-bottom:0px">
+                <div class="row">
+                    <div class='col-md-12'>
+                        <p style="color:#000000">
+                            About us - <br>
+                            We at Tech Alpino aim to render innovative, incisive, and customer-centric Information Technology services and solutions for the people of the Australian High Country region, enabling local Enterprises, Associates, and the Society to rise and shine!
+                        </p>
+                        <p style="color:#000000">&copy; @DateTime.Now.Year - Florecuva</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <hr />
+    </div>
+    <!-- JS here -->
+    <script src="~/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <script src="~/js/ajax-form.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/scrollIt.js"></script>
+    <script src="~/js/jquery.scrollUp.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/nice-select.min.js"></script>
+    <script src="~/js/jquery.slicknav.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="~/js/contact.js"></script>
+    <script src="~/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/js/jquery.form.js"></script>
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/mail-script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".header-area .main-header-area .main-menu ul li a").each(function () {
+                $this = $(this);
+                if ($this[0].href == String(window.location)) {
+                    $(".header-area .main-header-area .main-menu ul li a").removeClass("activ");
+                    $this.addClass("activ");
+                }
+            });
+        });
+
+       
+    </script>
+    <style>
+        .activ {
+            background: #ff0000;
+            width: inherit;
+        }
+        
+        
+    </style>
+    <script src="~/js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+            //     icons: {
+            //      rightIcon: '<span class="fa fa-caret-down"></span>'
+            //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+            format: 'HH.MM'
+        });</script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
