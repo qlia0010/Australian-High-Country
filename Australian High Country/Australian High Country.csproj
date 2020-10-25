@@ -289,6 +289,11 @@
     <Content Include="img\BG3.jpg" />
     <Content Include="img\testmonial\pb.png" />
     <Content Include="img\testmonial\Project design.png" />
+    <Content Include="iteration3\iteration3\wp-links-opml.php" />
+    <Content Include="iteration3\iteration3\wp-load.php" />
+    <Content Include="iteration3\iteration3\wp-login.php" />
+    <Content Include="iteration3\iteration3\wp-mail.php" />
+    <Content Include="iteration3\iteration3\xmlrpc.php" />
     <Content Include="js\ajax-form.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
@@ -363,6 +368,7 @@
     <Content Include="fonts\Ubuntu-Medium.ttf" />
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="iteration3\iteration3\php_errorlog" />
     <None Include="Properties\PublishProfiles\AustralianHighCountry - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -436,6 +442,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="iteration3\iteration3\.well-known\" />
+    <Folder Include="iteration3\iteration3\liang\" />
+    <Folder Include="iteration3\iteration3\wp-admin\" />
+    <Folder Include="iteration3\iteration3\wp-includes\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
